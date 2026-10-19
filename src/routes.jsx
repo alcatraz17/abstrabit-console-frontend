@@ -4,6 +4,7 @@ import { AppLayout } from './components/layout/AppLayout.jsx';
 import { LoginPage } from './pages/login/LoginPage.jsx';
 import { NotFoundPage } from './pages/not-found/NotFoundPage.jsx';
 import { OverviewPage } from './pages/overview/OverviewPage.jsx';
+import { ServersPage } from './pages/servers/ServersPage.jsx';
 
 export const routes = [
   {
@@ -17,6 +18,7 @@ export const routes = [
         element: <AppLayout />,
         children: [
           { index: true, element: <OverviewPage /> },
+          { path: 'servers', element: <ServersPage /> },
           { path: '*', element: <NotFoundPage /> },
         ],
       },

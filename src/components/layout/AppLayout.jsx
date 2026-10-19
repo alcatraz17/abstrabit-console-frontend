@@ -8,7 +8,10 @@ import { Button } from '../ui/Button.jsx';
 import { DemoBanner } from './DemoBanner.jsx';
 import { GuildSwitcher } from './GuildSwitcher.jsx';
 
-const NAVIGATION = [{ to: '/', label: 'Overview', end: true }];
+const NAVIGATION = [
+  { to: '/', label: 'Overview', end: true },
+  { to: '/servers', label: 'Servers' },
+];
 
 function navClasses({ isActive }) {
   return cx(

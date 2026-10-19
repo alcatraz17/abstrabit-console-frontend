@@ -43,7 +43,7 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 
 ### 3. Pages
 
-- [ ] Servers: bot invite, connect codes with countdown, report channel and mirror settings, test message, re-registration and disconnect
+- [x] Servers: bot invite, connect codes with countdown, report channel and mirror settings, test message, re-registration and disconnect
 - [ ] Commands: configuration form, rules editor, rule tester, versioned saves with conflict handling and an unsaved-changes guard
 - [ ] Live log: filters, incremental polling with a cursor and a details drawer with the decision, actions and timeline
 - [ ] Failures: retrying and failed jobs, bulk retry and security events
@@ -53,7 +53,7 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 
 - [ ] Unit tests for the API client, redirects, formatting, form schemas and feed merging
 - [x] Integration tests for sign-in and sign-out
-- [ ] Integration tests for servers
+- [x] Integration tests for servers
 - [ ] Integration tests for command configuration
 - [ ] Integration tests for the overview, live log and failures pages
 
