@@ -35,8 +35,8 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 
 ### 2. Session and shell
 
-- [ ] API client with typed errors, same-origin credentials and 401 handling
-- [ ] Auth provider backed by `GET /api/auth/me`, and toast notifications
+- [x] API client with typed errors, same-origin credentials and 401 handling
+- [x] Auth provider backed by `GET /api/auth/me`, and toast notifications
 - [ ] Login page with validation, credential and rate-limit banners and safe `next` redirects
 - [ ] Route guards, app layout, server switcher and demo banner
 - [ ] Overview page
