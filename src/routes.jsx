@@ -1,6 +1,7 @@
 import { RedirectIfAuthenticated } from './components/guards/RedirectIfAuthenticated.jsx';
 import { RequireAuth } from './components/guards/RequireAuth.jsx';
 import { AppLayout } from './components/layout/AppLayout.jsx';
+import { CommandsPage } from './pages/commands/CommandsPage.jsx';
 import { LoginPage } from './pages/login/LoginPage.jsx';
 import { NotFoundPage } from './pages/not-found/NotFoundPage.jsx';
 import { OverviewPage } from './pages/overview/OverviewPage.jsx';
@@ -18,6 +19,7 @@ export const routes = [
         element: <AppLayout />,
         children: [
           { index: true, element: <OverviewPage /> },
+          { path: 'commands', element: <CommandsPage /> },
           { path: 'servers', element: <ServersPage /> },
           { path: '*', element: <NotFoundPage /> },
         ],
