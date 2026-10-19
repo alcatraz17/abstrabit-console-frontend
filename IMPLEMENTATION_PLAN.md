@@ -30,8 +30,8 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 - [x] Vite, React, Tailwind CSS, ESLint, Prettier, Vitest and the CI workflow
 - [x] `vercel.json` with the `/api` rewrite, client-side routing and security headers
 - [x] Bundle scan in the build and the comment check in lint
-- [ ] UI primitives: button, field, switch, tag input, card, alert, badge, dialog, tabs, spinner and relative time
-- [ ] Formatting and validation helpers
+- [x] UI primitives: button, field, switch, tag input, card, alert, badge, dialog, tabs, spinner and relative time
+- [x] Formatting and validation helpers
 
 ### 2. Session and shell
 
