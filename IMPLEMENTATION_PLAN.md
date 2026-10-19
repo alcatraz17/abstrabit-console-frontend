@@ -60,7 +60,7 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 ### 5. Documentation
 
 - [x] `CLAUDE.md` with the code style and rules
-- [ ] README with pages, structure, local setup, quality checks and deployment
+- [x] README with pages, structure, local setup, quality checks and deployment
 
 ### 6. Deployment
 
