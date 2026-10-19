@@ -2,6 +2,8 @@ import { RedirectIfAuthenticated } from './components/guards/RedirectIfAuthentic
 import { RequireAuth } from './components/guards/RequireAuth.jsx';
 import { AppLayout } from './components/layout/AppLayout.jsx';
 import { CommandsPage } from './pages/commands/CommandsPage.jsx';
+import { DemoPage } from './pages/demo/DemoPage.jsx';
+import { FailuresPage } from './pages/failures/FailuresPage.jsx';
 import { LiveLogPage } from './pages/live-log/LiveLogPage.jsx';
 import { LoginPage } from './pages/login/LoginPage.jsx';
 import { NotFoundPage } from './pages/not-found/NotFoundPage.jsx';
@@ -23,6 +25,8 @@ export const routes = [
           { path: 'live', element: <LiveLogPage /> },
           { path: 'commands', element: <CommandsPage /> },
           { path: 'servers', element: <ServersPage /> },
+          { path: 'failures', element: <FailuresPage /> },
+          { path: 'demo', element: <DemoPage /> },
           { path: '*', element: <NotFoundPage /> },
         ],
       },

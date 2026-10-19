@@ -13,6 +13,8 @@ const NAVIGATION = [
   { to: '/live', label: 'Live log' },
   { to: '/commands', label: 'Commands' },
   { to: '/servers', label: 'Servers' },
+  { to: '/failures', label: 'Failures' },
+  { to: '/demo', label: 'Demo controls' },
 ];
 
 function navClasses({ isActive }) {
