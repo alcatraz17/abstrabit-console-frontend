@@ -37,9 +37,9 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 
 - [x] API client with typed errors, same-origin credentials and 401 handling
 - [x] Auth provider backed by `GET /api/auth/me`, and toast notifications
-- [ ] Login page with validation, credential and rate-limit banners and safe `next` redirects
-- [ ] Route guards, app layout, server switcher and demo banner
-- [ ] Overview page
+- [x] Login page with validation, credential and rate-limit banners and safe `next` redirects
+- [x] Route guards, app layout, server switcher and demo banner
+- [x] Overview page
 
 ### 3. Pages
 
@@ -52,7 +52,7 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 ### 4. Tests
 
 - [ ] Unit tests for the API client, redirects, formatting, form schemas and feed merging
-- [ ] Integration tests for sign-in and sign-out
+- [x] Integration tests for sign-in and sign-out
 - [ ] Integration tests for servers
 - [ ] Integration tests for command configuration
 - [ ] Integration tests for the overview, live log and failures pages

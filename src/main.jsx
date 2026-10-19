@@ -1,11 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { createBrowserRouter } from 'react-router';
+import { App } from './App.jsx';
 import './index.css';
+import { createQueryClient } from './query-client.js';
+import { routes } from './routes.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <main className="grid min-h-dvh place-items-center bg-slate-50 text-slate-900">
-      <h1 className="text-xl font-semibold">Abstrabit Console</h1>
-    </main>
+    <App router={createBrowserRouter(routes)} queryClient={createQueryClient()} />
   </StrictMode>,
 );
