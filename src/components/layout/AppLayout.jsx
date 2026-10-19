@@ -10,6 +10,7 @@ import { GuildSwitcher } from './GuildSwitcher.jsx';
 
 const NAVIGATION = [
   { to: '/', label: 'Overview', end: true },
+  { to: '/live', label: 'Live log' },
   { to: '/commands', label: 'Commands' },
   { to: '/servers', label: 'Servers' },
 ];
