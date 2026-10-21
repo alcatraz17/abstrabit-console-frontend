@@ -46,6 +46,7 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 - [x] Servers: bot invite, connect codes with countdown, report channel and mirror settings, test message, re-registration and disconnect
 - [x] Commands: configuration form, rules editor, rule tester, versioned saves with conflict handling and an unsaved-changes guard
 - [x] Live log: filters, incremental polling with a cursor and a details drawer with the decision, actions and timeline
+- [x] Live log shows the delivery state and the report state as separate chips, with a Delivery filter
 - [x] Failures: retrying and failed jobs, bulk retry and security events
 - [x] Demo controls: mirror-outage and slow-AI toggles
 
@@ -64,6 +65,6 @@ The admin console for the Discord slash-command bot. Administrators sign in, fol
 
 ### 6. Deployment
 
-- [ ] Vercel project with the Vite preset and Node.js 24.x
-- [ ] `/api` rewrite pointed at the production backend, and the backend `APP_URL` set to the console URL
-- [ ] Sign-in, live log and retries checked against production
+- [x] Vercel project with the Vite preset and Node.js 24.x
+- [x] `/api` rewrite pointed at the production backend, and the backend `APP_URL` set to the console URL
+- [x] Sign-in, live log and retries checked against production
