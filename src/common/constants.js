@@ -54,10 +54,10 @@ export const ACK_BUDGET_MS = 3000;
 export const LABELS = Object.freeze({
   status: {
     received: 'Received',
-    processing: 'Processing',
-    done: 'Done',
-    partial: 'Partial',
-    failed: 'Failed',
+    processing: 'Delivering',
+    done: 'Delivered',
+    partial: 'Partly delivered',
+    failed: 'Not processed',
     blocked: 'Blocked',
     pending: 'Pending',
     running: 'Running',

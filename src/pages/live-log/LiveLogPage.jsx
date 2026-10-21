@@ -97,7 +97,12 @@ function FeedTable({ items, onOpen }) {
               </td>
               <td className="px-4 py-3">
                 <div className="flex flex-wrap items-center gap-1">
-                  <StatusBadge status={item.status} />
+                  <StatusBadge status={item.status} title="Delivery" />
+                  {item.reportStatus && (
+                    <StatusBadge status={item.reportStatus} title="Report status">
+                      Report {labelFor(LABELS.status, item.reportStatus).toLowerCase()}
+                    </StatusBadge>
+                  )}
                   <PriorityBadge priority={item.priority} />
                   {item.blockReason && (
                     <Badge>{labelFor(LABELS.blockReason, item.blockReason)}</Badge>
@@ -169,12 +174,12 @@ function GuildLiveLog({ guild }) {
           </Select>
         </label>
         <label className="text-sm">
-          <span className="mb-1 block font-medium text-slate-700">Status</span>
+          <span className="mb-1 block font-medium text-slate-700">Delivery</span>
           <Select
             value={status ?? ''}
             onChange={(event) => updateParams({ status: event.target.value })}
           >
-            <option value="">All statuses</option>
+            <option value="">Any delivery</option>
             {INTERACTION_STATUSES.map((value) => (
               <option key={value} value={value}>
                 {labelFor(LABELS.status, value)}
@@ -202,7 +207,7 @@ function GuildLiveLog({ guild }) {
           title={filtered ? 'No interactions match these filters' : 'No interactions yet'}
         >
           {filtered
-            ? 'Try a different command or status.'
+            ? 'Try a different command or delivery state.'
             : 'Run /report or /status in your Discord server and it will appear here within seconds.'}
         </EmptyState>
       ) : (

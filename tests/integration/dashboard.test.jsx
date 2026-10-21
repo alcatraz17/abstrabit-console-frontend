@@ -52,6 +52,8 @@ describe('dashboard', () => {
     const row = (await screen.findByText('Checkout is down in the EU')).closest('tr');
     expect(within(row).getByText('Mirror 8/8')).toBeInTheDocument();
     expect(within(row).getByText('outage')).toBeInTheDocument();
+    expect(within(row).getByText('Delivered')).toHaveAttribute('title', 'Delivery');
+    expect(within(row).getByText('Report open')).toHaveAttribute('title', 'Report status');
 
     await user.click(within(row).getByRole('button', { name: 'Checkout is down in the EU' }));
     expect(currentPath(router)).toBe('/live?interaction=400000000000000001');
@@ -59,6 +61,7 @@ describe('dashboard', () => {
     const drawer = await screen.findByRole('dialog');
     expect(await within(drawer).findByText(/Outage keywords/)).toBeInTheDocument();
     expect(within(drawer).getByText('Report #42')).toBeInTheDocument();
+    expect(within(drawer).getByText('Delivery')).toBeInTheDocument();
     expect(within(drawer).getByRole('link', { name: 'Open in Discord' })).toHaveAttribute(
       'href',
       `https://discord.com/channels/${GUILD.id}/300000000000000011/400000000000000099`,
@@ -82,7 +85,7 @@ describe('dashboard', () => {
     const { user } = renderApp('/live');
 
     await screen.findByText('No interactions yet');
-    await user.selectOptions(screen.getByLabelText('Status'), 'failed');
+    await user.selectOptions(screen.getByLabelText('Delivery'), 'failed');
 
     expect(await screen.findByText('No interactions match these filters')).toBeInTheDocument();
     expect(api.callsTo('GET', `${base}/interactions`).at(-1).query).toMatchObject({

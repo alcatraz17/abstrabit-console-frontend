@@ -38,6 +38,7 @@ export function feedItem(overrides = {}) {
     tags: ['outage'],
     blockReason: null,
     reportId: 42,
+    reportStatus: 'open',
     ackMs: 310,
     configVersion: 3,
     aiSummary: null,

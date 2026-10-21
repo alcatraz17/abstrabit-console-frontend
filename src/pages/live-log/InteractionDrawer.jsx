@@ -173,7 +173,7 @@ function Details({ interaction, guildId }) {
     <div className="space-y-6">
       <Facts
         items={[
-          ['Status', <StatusBadge key="s" status={interaction.status} />],
+          ['Delivery', <StatusBadge key="s" status={interaction.status} />],
           ['User', interaction.userName],
           ['Received', formatDateTime(interaction.receivedAt)],
           ['Acknowledged in', formatMs(interaction.ackMs)],
