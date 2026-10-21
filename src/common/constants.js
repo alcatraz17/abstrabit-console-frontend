@@ -96,7 +96,6 @@ export const LABELS = Object.freeze({
   mirrorKind: { none: 'No mirror', discord: 'Discord webhook', slack: 'Slack webhook' },
   securityEvent: {
     signature_rejected: 'Invalid signature',
-    stale_timestamp: 'Stale timestamp',
     duplicate_interaction: 'Duplicate delivery',
     login_failed: 'Failed sign-in',
     cron_unauthorized: 'Unauthorized sweep call',

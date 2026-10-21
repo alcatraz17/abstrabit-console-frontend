@@ -131,7 +131,7 @@ function GuildOverview({ guild }) {
               <Stat
                 label="Rejected requests (24 h)"
                 value={data.rejectedRequests24h}
-                detail="Forged signatures and stale timestamps"
+                detail="Missing, malformed or forged signatures"
                 to="/failures"
               />
               <Stat
